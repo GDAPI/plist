@@ -1,0 +1,48 @@
+{
+  "name": "@gdapi/plist",
+  "version": "0.1.0",
+  "description": "Parse/Stringify simplified plist used by Geometry Dash",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf build && rollup -c rollup.prod.config.js",
+    "build:test": "rimraf build && rollup --watch --config rollup.test.config.js",
+    "karma:start": "karma start karma.config.js",
+    "test:watch": "node ./script/test.js",
+    "prepare": "eslint src/**/*.js && npm build && karma start karma.config.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quasar-kim/gdapi.git"
+  },
+  "keywords": [
+    "geometrydash"
+  ],
+  "author": "Quasar-Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quasar-kim/gdapi/issues"
+  },
+  "homepage": "https://github.com/quasar-kim/gdapi#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.16.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "jasmine-core": "^3.6.0",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.35.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "xmlbuilder2": "^2.4.0",
+    "xmldom": "^0.4.0"
+  }
+}

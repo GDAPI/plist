@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Node: launch and debug current file",
+            "program": "${file}",
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ],
+            "sourceMaps": false
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Debug Unit Tests",
+            "url": "http://localhost:9876/debug.html",
+            "port": 1234,
+            "pathMapping": {
+                "/base/": "${workspaceFolder}/",
+            }
+        }
+    ]
+}
