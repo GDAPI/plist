@@ -1,6 +1,6 @@
 {
   "name": "@gdapi/plist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse/Stringify simplified plist used by Geometry Dash",
   "main": "build/index.js",
   "module": "build/index.js",
@@ -10,7 +10,7 @@
     "build:test": "rimraf build && rollup --watch --config rollup.test.config.js",
     "karma:start": "karma start karma.config.js",
     "test:watch": "node ./script/test.js",
-    "prepare": "eslint src/**/*.js && npm run build && karma start karma.config.cjs --single-run"
+    "prepublishOnly": "eslint src/**/*.js && npm run build && karma start karma.config.cjs --single-run"
   },
   "repository": {
     "type": "git",
