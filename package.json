@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasar-kim/gdapi.git"
+    "url": "git+https://github.com/GDAPI/plist.git"
   },
   "keywords": [
     "geometrydash"
@@ -22,9 +22,9 @@
   "author": "Quasar-Kim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/quasar-kim/gdapi/issues"
+    "url": "https://github.com/GDAPI/plist/issues"
   },
-  "homepage": "https://github.com/quasar-kim/gdapi#readme",
+  "homepage": "https://github.com/GDAPI/plist#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
