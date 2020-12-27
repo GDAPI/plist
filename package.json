@@ -10,7 +10,7 @@
     "build:test": "rimraf build && rollup --watch --config rollup.test.config.js",
     "karma:start": "karma start karma.config.js",
     "test:watch": "node ./script/test.js",
-    "prepare": "eslint src/**/*.js && npm build && karma start karma.config.js --single-run"
+    "prepare": "eslint src/**/*.js && npm run build && karma start karma.config.cjs --single-run"
   },
   "repository": {
     "type": "git",
